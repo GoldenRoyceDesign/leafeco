@@ -1,0 +1,22 @@
+@media screen and (max-width: 991px) {
+    .hero-section{
+        height: 60vh;
+    }
+    .hero-section .container>.d-flex {
+        width: 100% !important;
+    }
+
+
+    .collection .right-part > .d-flex{
+        width: 70% !important;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial .next-pre-btn{
+        top: 115px !important;
+        padding: 10px !important;
+    }
+}
