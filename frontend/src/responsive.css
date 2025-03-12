@@ -24,4 +24,8 @@
         top: 115px !important;
         padding: 10px !important;
     }
+
+    .footer .footer_logo{
+        width: 200px !important;
+    }
 }

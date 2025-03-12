@@ -9,13 +9,13 @@ export default function Footer() {
         <Container>
           <Row>
             {/* Left Section - Logo & Description */}
-            <Col md={3} className="text-center text-md-start mb-3 mb-md-0">
-              <img src={footer_logo} alt="footer_logo" className="img-fluid w-75 mb-3" />
+            <Col md={3} className="text-start mb-3 mb-md-0">
+              <img src={footer_logo} alt="footer_logo" className="img-fluid w-75 mb-3 footer_logo" />
               <p className="small mb-3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
               {/* Social Icons (Replace with actual icons if needed) */}
-              <div className="d-flex justify-content-center justify-content-md-start gap-2">
+              <div className="d-flex justify-content-start gap-2">
                 <div className="bg-white rounded-circle" style={{ width: "30px", height: "30px" }}></div>
                 <div className="bg-white rounded-circle" style={{ width: "30px", height: "30px" }}></div>
                 <div className="bg-white rounded-circle" style={{ width: "30px", height: "30px" }}></div>
