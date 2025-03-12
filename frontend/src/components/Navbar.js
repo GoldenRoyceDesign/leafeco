@@ -18,7 +18,7 @@ export default function NavBar() {
     return (
         <>
             {/* Top Bar */}
-            <div className="text-white text-center py-2" style={{ background: '#024B34' }}>
+            <div className="top-bar text-white text-center py-2" style={{ background: '#024B34' }}>
                 <p className="mb-0">
                     All Orders Placed Between 2.15 - 2.23 will ship on Monday, 2.24. | Free Shipping On Orders Over $65
                 </p>

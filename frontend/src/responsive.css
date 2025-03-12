@@ -15,6 +15,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    .top-bar p{
+        font-size: 10px;
+        padding: .5rem;
+    }
+
     .testimonial .next-pre-btn{
         top: 115px !important;
         padding: 10px !important;
