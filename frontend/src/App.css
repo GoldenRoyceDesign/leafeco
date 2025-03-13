@@ -126,3 +126,33 @@
   overflow: hidden;
   background-color: #F4F4F4;
 }
+
+
+/* About page style */
+
+.about{
+  background-image: url('./assets/about/About_bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+}
+
+.about-section{
+  background-image: url('./assets/about/aboutus.png');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.about-section .btn{
+  width: fit-content;
+  background: #B75417;
+  box-shadow: 0px 2px 2px 2px rgb(252, 190, 152);
+  color: white;
+}
+
+.leader > p{
+  letter-spacing: 10px;
+  font-size: 14px;
+}
+

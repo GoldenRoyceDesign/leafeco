@@ -4,7 +4,7 @@ import footer_logo from '../assets/home/footer-logo.png'
 
 export default function Footer() {
   return (
-    <footer className="footer mt-5">
+    <footer className="footer">
       <div className="text-white py-5" style={{background: '#006847'}}>
         <Container>
           <Row>

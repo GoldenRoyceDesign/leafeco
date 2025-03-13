@@ -17,6 +17,12 @@ export default function Hero() {
                     <button className="btn px-4">LEARN MORE</button>
                 </div>
 
+                <div className="">
+                    <div className="">
+                        <img src="" />
+                    </div>
+                </div>
+                
             </div>
         </div>
     );

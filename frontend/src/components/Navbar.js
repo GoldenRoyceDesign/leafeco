@@ -40,7 +40,7 @@ export default function NavBar() {
                         <Nav className="mx-auto d-flex justify-content-center gap-4">
                             <NavLink className="nav-link" to="/" onClick={closeNavbar}>Home</NavLink>
                             <NavLink className="nav-link" to="/about" onClick={closeNavbar}>About</NavLink>
-                            <NavLink className="nav-link" to="/products" onClick={closeNavbar}>Products</NavLink>
+                            <NavLink className="nav-link" to="/product" onClick={closeNavbar}>Products</NavLink>
                             <NavLink className="nav-link" to="/contact" onClick={closeNavbar}>Contact Us</NavLink>
                         </Nav>
 

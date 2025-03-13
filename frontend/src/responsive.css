@@ -28,4 +28,12 @@
     .footer .footer_logo{
         width: 200px !important;
     }
+
+    .about{
+        height: 60vh;
+    }
+
+    .leader .leader-section{
+        flex-direction: column;
+    }
 }
