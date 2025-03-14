@@ -46,6 +46,14 @@
   width: fit-content;
 }
 
+.hero-section .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
+}
+
 .home>p {
   color: #656967;
 }
@@ -55,6 +63,14 @@
   color: white;
   border-radius: 0px !important;
   width: fit-content;
+}
+
+.collection .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
 }
 
 .collection{
@@ -93,6 +109,14 @@
   width: fit-content;
 }
 
+.plates-section .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
+}
+
 .plates-section .party{
   color: #107252;
   letter-spacing: 5px;
@@ -119,6 +143,14 @@
   color: white;
   border-radius: 0px !important;
   width: fit-content;
+}
+
+.sugarcane .left .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
 }
 
 .shipping-delivery{
@@ -151,8 +183,38 @@
   color: white;
 }
 
+.about-section .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
+}
+
 .leader > p{
   letter-spacing: 10px;
   font-size: 14px;
 }
 
+/* Contact page style */
+
+.contact .btn{
+  background: #B75417;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
+}
+
+.contact .btn:hover{
+  background: #107252;
+  color: white;
+  border-radius: 0px !important;
+  width: fit-content;
+  border: none;
+}
+
+.gallery{
+  width: 100%;
+  overflow: hidden;
+}

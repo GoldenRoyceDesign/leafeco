@@ -40,30 +40,34 @@ export default function ProductList() {
       <Row>
         {/* Sidebar Filters */}
         <Col md={3} className="border-end p-3">
-          <h5>FILTERS</h5>
-          <h6 className="mt-3">CATEGORIES</h6>
-          <Form>
-            <Form.Check
-              type="radio"
-              label="Show All"
-              name="category"
-              checked={selectedCategory === ""}
-              onChange={() => handleCategoryChange("")}
-            />
-            {["Table ware", "Kitchen Ware", "Drink Ware", "Personal Care"].map(
-              (category) => (
-                <Form.Check
-                  key={category}
-                  type="radio"
-                  label={category}
-                  name="category"
-                  value={category}
-                  checked={selectedCategory === category}
-                  onChange={() => handleCategoryChange(category)}
-                />
-              )
-            )}
-          </Form>
+          <div className="card p-3">
+            <h5>FILTERS</h5>
+            <hr></hr>
+            <h6 className="mt-3">CATEGORIES</h6>
+            <hr></hr>
+            <Form>
+              <Form.Check
+                type="radio"
+                label="Show All"
+                name="category"
+                checked={selectedCategory === ""}
+                onChange={() => handleCategoryChange("")}
+              />
+              {["Table ware", "Kitchen Ware", "Drink Ware", "Personal Care"].map(
+                (category) => (
+                  <Form.Check
+                    key={category}
+                    type="radio"
+                    label={category}
+                    name="category"
+                    value={category}
+                    checked={selectedCategory === category}
+                    onChange={() => handleCategoryChange(category)}
+                  />
+                )
+              )}
+            </Form>
+          </div>
         </Col>
 
         {/* Product Grid */}
