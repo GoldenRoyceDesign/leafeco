@@ -12,6 +12,7 @@ const blogs = [
         author: "Alison Parker",
         date: "22 January 2025",
         description: "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,",
+        link: ""
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ const blogs = [
         author: "Alison Parker",
         date: "22 January 2025",
         description: "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,",
+        link: ""
     },
     {
         id: 3,
@@ -28,6 +30,7 @@ const blogs = [
         author: "Alison Parker",
         date: "22 January 2025",
         description: "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,",
+        link: ""
     },
 ];
 
@@ -63,7 +66,7 @@ export default function BlogSection() {
                                     <p className="text-muted"><span className="mx-1" style={{color: '#B75417'}}>•</span> {blog.date}</p>
                                 </div>
                                 <p className="text-dark">{blog.description}</p>
-                                <a href="#" className="fw-bold" style={{color: '#B75417'}}>
+                                <a href={blog.link} className="fw-bold" style={{color: '#B75417'}}>
                                     Read More
                                 </a>
                             </Card.Body>

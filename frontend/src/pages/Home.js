@@ -203,8 +203,6 @@ const HomePage = () => {
                 <BlogSection />
             </section>
 
-
-
         </>
     );
 };

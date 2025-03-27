@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {
-  Card,
-  Button,
-  Container,
-  Row,
-  Col,
-  Spinner,
-  Badge,
-  Form,
-} from "react-bootstrap";
+import { Card, Container, Row, Col, Spinner, Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:5000/api/products")
@@ -25,7 +18,7 @@ export default function ProductList() {
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
-  // Handle category filter
+  // Handle category selection
   const handleCategoryChange = (category) => {
     setSelectedCategory(category === selectedCategory ? "" : category);
   };
@@ -40,34 +33,30 @@ export default function ProductList() {
       <Row>
         {/* Sidebar Filters */}
         <Col md={3} className="border-end p-3">
-          <div className="card p-3">
-            <h5>FILTERS</h5>
-            <hr></hr>
-            <h6 className="mt-3">CATEGORIES</h6>
-            <hr></hr>
-            <Form>
-              <Form.Check
-                type="radio"
-                label="Show All"
-                name="category"
-                checked={selectedCategory === ""}
-                onChange={() => handleCategoryChange("")}
-              />
-              {["Table ware", "Kitchen Ware", "Drink Ware", "Personal Care"].map(
-                (category) => (
-                  <Form.Check
-                    key={category}
-                    type="radio"
-                    label={category}
-                    name="category"
-                    value={category}
-                    checked={selectedCategory === category}
-                    onChange={() => handleCategoryChange(category)}
-                  />
-                )
-              )}
-            </Form>
-          </div>
+          <h5>FILTERS</h5>
+          <h6 className="mt-3">CATEGORIES</h6>
+          <Form>
+            <Form.Check
+              type="radio"
+              label="Show All"
+              name="category"
+              checked={selectedCategory === ""}
+              onChange={() => handleCategoryChange("")}
+            />
+            {["Table ware", "Kitchen Ware", "Drink Ware", "Personal Care"].map(
+              (category) => (
+                <Form.Check
+                  key={category}
+                  type="radio"
+                  label={category}
+                  name="category"
+                  value={category}
+                  checked={selectedCategory === category}
+                  onChange={() => handleCategoryChange(category)}
+                />
+              )
+            )}
+          </Form>
         </Col>
 
         {/* Product Grid */}
@@ -83,7 +72,11 @@ export default function ProductList() {
             <Row>
               {filteredProducts.map((product) => (
                 <Col md={3} key={product._id} className="mb-4">
-                  <Card className="shadow-sm border-0">
+                  <Card
+                    className="shadow-sm border-0"
+                    onClick={() => navigate(`/product/${product._id}`)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <div
                       style={{
                         width: "100%",
@@ -115,15 +108,10 @@ export default function ProductList() {
                             <h6 className="text-muted text-decoration-line-through">
                               ${product.price + 5}
                             </h6>
-                            <Badge bg="danger" className="ms-2">
-                              Sale
-                            </Badge>
+                            <span className="badge bg-danger ms-2">Sale</span>
                           </>
                         )}
                       </div>
-                      <Button variant="primary" className="w-100 mt-2">
-                        Add to Cart
-                      </Button>
                     </Card.Body>
                   </Card>
                 </Col>

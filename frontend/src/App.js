@@ -9,6 +9,10 @@ import Footer from "./components/Footer";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import ContactPage from "./pages/Contact";
+import ProductDetail from "./components/ProductDetail";
+import Cart from "./components/cart";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 
 function App() {
@@ -20,6 +24,10 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </Router>

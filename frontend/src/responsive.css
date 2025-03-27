@@ -36,4 +36,9 @@
     .leader .leader-section{
         flex-direction: column;
     }
+
+    .login-right{
+        align-items: center !important;
+        text-align: center;
+    }
 }

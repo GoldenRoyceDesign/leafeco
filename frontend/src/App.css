@@ -217,3 +217,37 @@
   width: 100%;
   overflow: hidden;
 }
+
+
+/* Signup/Login page style */
+.signup, .login{
+  background-image: url('./assets/login/Login.png');
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+}
+
+.login-right{
+  background: #E7F2F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  gap: 20px;
+}
+
+.login-right input{
+  width: 80%;
+  padding: 5px;
+  background: #E7F2F4;
+}
+
+.login-right button{
+  background: #B75417;
+  width: 80%;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border: none;
+}
