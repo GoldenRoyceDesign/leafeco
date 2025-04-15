@@ -17,7 +17,7 @@ export default function ProductDetail() {
   const user = JSON.parse(localStorage.getItem("user")); // Get logged-in user
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`, {
+    fetch(`https://leafeco.onrender.com/api/products/${id}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
