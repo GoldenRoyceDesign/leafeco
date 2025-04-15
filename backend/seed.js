@@ -13,7 +13,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 799,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Table ware",
     stock: 50,
@@ -21,7 +21,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 699,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Kitchen Ware",
     stock: 30,
@@ -29,7 +29,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 799,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Kitchen Ware",
     stock: 50,
@@ -37,7 +37,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 699,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Table ware",
     stock: 30,
@@ -45,7 +45,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 799,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Kitchen Ware",
     stock: 50,
@@ -53,7 +53,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 699,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Drink Ware",
     stock: 30,
@@ -61,7 +61,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 799,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Drink Ware",
     stock: 50,
@@ -69,7 +69,7 @@ const products = [
   {
     name: "10 Inch Round Compostable Plates",
     price: 699,
-    image: "http://localhost:5000/uploads/product.png",
+    image: "https://leafeco.onrender.com/uploads/product.png",
     description: "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing",
     category: "Drink Ware",
     stock: 30,
