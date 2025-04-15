@@ -13,6 +13,7 @@ import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/cart";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Notifications from "./components/Notifications";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/notifications" element={<Notifications />} />
       </Routes>
       <Footer />
     </Router>

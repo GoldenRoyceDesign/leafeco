@@ -1,6 +1,7 @@
 // src/components/Hero.js
 
 
+
 export default function Hero() {
     return (
         <div className="hero-section py-5 d-flex flex-column justify-content-center">

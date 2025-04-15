@@ -3,8 +3,23 @@ import { NavLink } from "react-router-dom";
 import { Container, Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaSearch, FaShoppingCart, FaBell, FaUserCircle } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../redux/authSlice";
+import { clearCart } from "../redux/cartSlice";
 
 export default function NavBar() {
+
+    const dispatch = useDispatch();
+    const user = useSelector((state) => state.auth.user);
+
+    // Extract username from email (before @)
+    const username = user?.email?.split("@")[0];
+
+    const handleLogout = () => {
+        dispatch(logout());
+        dispatch(clearCart());
+    };
+
     // Reference to Bootstrap navbar toggler
     const navbarRef = useRef(null);
 
@@ -58,9 +73,24 @@ export default function NavBar() {
 
                         {/* Right Side Icons */}
                         <div className="d-flex gap-3">
-                            <NavLink className="nav-link" to="/account" onClick={closeNavbar}>
-                                <FaUserCircle size={22} />
-                            </NavLink>
+                            <div className="user-container">
+                                {user ? (
+                                    <div className="user-dropdown">
+                                        <FaUserCircle size={28} className="user-icon" />
+                                        <div className="dropdown-box">
+                                            <span className="username">{username}</span>
+                                            <button className="logout-btn" onClick={handleLogout}>
+                                                Logout
+                                            </button>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <NavLink className="nav-link" onClick={closeNavbar}>
+                                        <FaUserCircle size={28} />
+                                    </NavLink>
+                                )}
+                            </div>
+                            
                             <NavLink className="nav-link" to="/cart" onClick={closeNavbar}>
                                 <FaShoppingCart size={22} />
                             </NavLink>
